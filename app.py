@@ -246,7 +246,8 @@ def save_prediction_to_supabase(job_input: dict, result: dict):
     headers = {
         "apikey": SUPABASE_ANON_KEY,
         "Authorization": f"Bearer {SUPABASE_ANON_KEY}",
-        "Content-Type": "application/json",
+        "Content-Type": "application/json", 
+        "Accept": "application/json",
         "Prefer": "return=representation",  # ask Supabase to return the row we inserted
     }
 
