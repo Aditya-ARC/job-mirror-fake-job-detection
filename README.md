@@ -5,7 +5,9 @@ Job Mirror is a production-ready machine learning web application that detects f
 It combines machine learning, explainability, and full cloud deployment to help job seekers identify suspicious job listings and understand why they may be fraudulent.
 
 🔗 Live Demo:
-https://job-mirror-fake-job-detection-5bqj5wb3hefcfe6vdoeeyg.streamlit.app/
+https://job-mirror-fake-job-detection-5bqj5wb3hefcfe6vdoeeyg.streamlit.app/ 
+<img width="1920" height="997" alt="image" src="https://github.com/user-attachments/assets/e5fcb65e-6c85-401a-96ed-8aed6bf5322f" />
+
 
 💡 What This Project Demonstrates
 
