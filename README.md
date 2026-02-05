@@ -1,94 +1,137 @@
-# Job Mirror – Fake Job Posting Detection System  
-An end-to-end machine learning system that identifies fake job postings using NLP, XGBoost, explainability rules, and cloud-based logging through Supabase.  
-The system includes a production-ready Streamlit application, model inference pipeline, preprocessing artifacts, and a secure deployment workflow.
+🚀 Job Mirror — Fake Job Posting Detection (ML + Cloud)
 
----
+Job Mirror is a production-ready machine learning web application that detects fake job postings in real time using NLP, XGBoost, and cloud-based logging.
 
-##  Features
-- Real-time prediction of FAKE vs REAL job postings  
-- NLP preprocessing using TF-IDF vectorization  
-- XGBoost fraud detection model  
-- Rule-based explanation engine (identifies “red flags”)  
-- Cloud logging of predictions using Supabase PostgreSQL  
-- Deployed Streamlit application for public use  
-- Modular design for future retraining or model upgrades  
+It combines machine learning, explainability, and full cloud deployment to help job seekers identify suspicious job listings and understand why they may be fraudulent.
 
----
+🔗 Live Demo:
+https://job-mirror-fake-job-detection-asqm5tchdurvyuulumam.streamlit.app
 
-##  Project Structure
+📂 Source Code:
+https://github.com/Aditya-ARC/job-mirror-fake-job-detection
 
-Job-Mirror-Fake-Job-Detection/
-│
-├── app.py                            # Streamlit UI + backend logic + prediction pipeline
-├── requirements.txt                  # Python dependencies
-├── preprocessing_artifacts_only.joblib   # TF-IDF, encoders, scalers, preprocessors
-├── xgb_model.json                    # Trained XGBoost model
-└── README.md                         # Documentation
+💡 What This Project Demonstrates
 
-## 🔧 Installation & Setup
+End-to-end ML system design
 
-### 1. Clone or download the project
-Download the ZIP or clone the repository: https://github.com/JobMirrorIS/job-mirror-fake-job-detection.git
+Real-time model inference in production
 
-cd job-mirror-fake-job-detection 
+Secure cloud deployment
 
+Database-backed logging & analytics
 
-### 2. Create a virtual environment (recommended)
-python -m venv venv
-venv\Scripts\activate # Windows
-source venv/bin/activate # Mac/Linux 
+Clean, user-friendly web interface
 
+This project mirrors how ML systems are built and deployed in real-world industry settings.
 
-### 3. Install dependencies
-pip install -r requirements.txt 
+🧠 Key Capabilities
 
-##  Running the Application
+🔍 Fake vs Real job classification
 
-Once dependencies are installed, run:
+📊 Probability scores (Fake / Real)
 
-streamlit run app.py 
+🧩 Explainability engine highlighting red flags
 
+🧠 NLP preprocessing using TF-IDF
 
-This launches the Job Mirror web UI in your browser.
+☁️ Cloud logging with Supabase (PostgreSQL)
 
-You can now paste a job posting into the form and receive:
-- Model prediction (FAKE or REAL)
-- Probability scores
-- Rule-based explanations ("red flags")
+🔐 Secure secrets & access control
 
+🛠️ Tech Stack
 
-This launches the Job Mirror web UI in your browser.
+Machine Learning
 
-You can now paste a job posting into the form and receive:
-- Model prediction (FAKE or REAL)
-- Probability scores
-- Rule-based explanations ("red flags") 
+Python
 
-##  Supabase Logging
+XGBoost
 
-Every prediction is logged into a Supabase PostgreSQL table through the Supabase REST API.
+Scikit-learn
 
-Logged fields include:
-- User inputs (text + metadata)
-- Model outputs (label + prob_fake + prob_real)
-- Explanatory reasons
-- Automatically generated UUID + timestamp
+TF-IDF Vectorization
 
-Credentials are securely stored using Streamlit Secrets:
-st.secrets["SUPABASE_URL"]
-st.secrets["SUPABASE_ANON_KEY"] 
+Feature Engineering (text + categorical + boolean)
 
-##  Deployment (Streamlit Cloud)
+Web & Cloud
 
-### Steps:
-1. Push project to GitHub
-2. Go to streamlit.io → Deploy App
-3. Select:
-   - Repo: JobMirrorIS/job-mirror-fake-job-detection
-   - Branch: main
-   - File: app.py
-4. Add Supabase credentials in Secrets 
-5. Deploy
+Streamlit (UI + backend runtime)
 
+Streamlit Cloud (deployment)
+
+Supabase (PostgreSQL)
+
+REST APIs
+
+Row Level Security (RLS)
+
+Engineering Practices
+
+Modular architecture
+
+Model artifact versioning
+
+Secure secret management
+
+GitHub version control 
+
+🏗️ Architecture Overview 
+User Input (Streamlit UI)
+        ↓
+Preprocessing Pipeline (TF-IDF + Encoders)
+        ↓
+XGBoost Model Inference
+        ↓
+Explainability Rules Engine
+        ↓
+Prediction + Reasons
+        ↓
+Supabase (PostgreSQL Logging)
+
+🗄️ Data & Logging
+
+Every prediction is logged to a PostgreSQL database with:
+
+Job input fields
+
+Prediction label (FAKE / REAL)
+
+Fraud probabilities
+
+Explanation reasons
+
+Auto-generated UUID
+
+Auto-generated timestamp
+
+This enables:
+
+Auditing
+
+Model monitoring
+
+Future retraining pipelines
+
+📸 Application Preview
+
+Job Input Interface
+(Streamlit UI for entering job details)
+
+Prediction Result
+(Fraud label, probabilities, and red-flag explanations)
+
+Cloud Database Logs
+(Predictions stored in Supabase PostgreSQL)
+
+📌 Screenshots available in the repository for full walkthrough.
+
+🚀 Deployment
+
+Hosted on Streamlit Cloud
+
+Supabase credentials stored securely using Streamlit Secrets
+
+Fully serverless deployment
+
+No local setup required for users
 
 
