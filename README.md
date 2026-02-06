@@ -11,17 +11,17 @@ https://job-mirror-fake-job-detection-5bqj5wb3hefcfe6vdoeeyg.streamlit.app/
 
 💡 What This Project Demonstrates
 
-End-to-end ML system design
+-End-to-end ML system design
 
-Real-time model inference in production
+-Real-time model inference in production
 
-Secure cloud deployment
+-Secure cloud deployment
 
-Database-backed logging & analytics
+-Database-backed logging & analytics
 
-Clean, user-friendly web interface
+-Clean, user-friendly web interface
 
-This project mirrors how ML systems are built and deployed in real-world industry settings.
+-This project mirrors how ML systems are built and deployed in real-world industry settings.
 
 🧠 Key Capabilities
 
@@ -39,39 +39,39 @@ This project mirrors how ML systems are built and deployed in real-world industr
 
 🛠️ Tech Stack
 
-Machine Learning
+-Machine Learning
 
-Python
+-Python
 
-XGBoost
+-XGBoost
 
-Scikit-learn
+-Scikit-learn
 
-TF-IDF Vectorization
+-TF-IDF Vectorization
 
-Feature Engineering (text + categorical + boolean)
+-Feature Engineering (text + categorical + boolean)
 
-Web & Cloud
+-Web & Cloud
 
-Streamlit (UI + backend runtime)
+-Streamlit (UI + backend runtime)
 
-Streamlit Cloud (deployment)
+-Streamlit Cloud (deployment)
 
-Supabase (PostgreSQL)
+-Supabase (PostgreSQL)
 
-REST APIs
+-REST APIs
 
-Row Level Security (RLS)
+-Row Level Security (RLS)
 
-Engineering Practices
+-Engineering Practices
 
-Modular architecture
+-Modular architecture
 
-Model artifact versioning
+-Model artifact versioning
 
-Secure secret management
+-Secure secret management
 
-GitHub version control 
+-GitHub version control 
 
 🏗️ Architecture Overview 
 User Input (Streamlit UI)
@@ -88,49 +88,47 @@ Supabase (PostgreSQL Logging)
 
 🗄️ Data & Logging
 
-Every prediction is logged to a PostgreSQL database with:
+-Every prediction is logged to a PostgreSQL database with:
 
-Job input fields
+-Job input fields
 
-Prediction label (FAKE / REAL)
+-Prediction label (FAKE / REAL)
 
-Fraud probabilities
+-Fraud probabilities
 
-Explanation reasons
+-Explanation reasons
 
-Auto-generated UUID
+-Auto-generated UUID
 
-Auto-generated timestamp
+-Auto-generated timestamp
 
 This enables:
 
-Auditing
+-Auditing
 
-Model monitoring
+-Model monitoring
 
-Future retraining pipelines
+-Future retraining pipelines
 
 📸 Application Preview
 
-Job Input Interface
+-Job Input Interface
 (Streamlit UI for entering job details)
 
-Prediction Result
+-Prediction Result
 (Fraud label, probabilities, and red-flag explanations)
 
-Cloud Database Logs
+-Cloud Database Logs
 (Predictions stored in Supabase PostgreSQL)
-
-📌 Screenshots available in the repository for full walkthrough.
 
 🚀 Deployment
 
-Hosted on Streamlit Cloud
+-Hosted on Streamlit Cloud
 
-Supabase credentials stored securely using Streamlit Secrets
+-Supabase credentials stored securely using Streamlit Secrets
 
-Fully serverless deployment
+-Fully serverless deployment
 
-No local setup required for users
+-No local setup required for users
 
 
